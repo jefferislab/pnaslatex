@@ -80,6 +80,7 @@
 
 
 % Keywords
+\RequirePackage{color}
 \newcommand{\keywords}[3]{%
 	{\fontspec{Myriad Pro}\fontsize{7.9pt}{10pt}\selectfont\noindent\@for\kw:=#1\do{\kw\hspace{0.5em}|\hspace{0.5em}}\hspace{-0.875em}\fcolorbox{white}{white}{\phantom{i}}\vspace*{1em}}%
 }
@@ -170,3 +171,5 @@
 
 % Main text
 \renewcommand{\normalsize}{\fontsize{9.5pt}{10.5pt}\selectfont}
+\frenchspacing
+
