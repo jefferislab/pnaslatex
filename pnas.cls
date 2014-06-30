@@ -129,6 +129,7 @@
 
 
 % Section headers
+\setcounter{secnumdepth}{-1}
 \RequirePackage{titlesec}
 \titleformat{\section}{\fontspec{Myriad Pro Bold}\fontsize{7.9pt}{8.5pt}}{\arabic{section}}{0.5em}{}{}
 \titlespacing*{\section}{0pt}{1em}{0pt}
