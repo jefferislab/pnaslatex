@@ -1,0 +1,215 @@
+\documentclass{pnas}
+\usepackage{amsmath,amsthm}
+\usepackage[sorting=none]{biblatex}
+\bibliography{pnas_example}
+
+\DeclareMathOperator{\supp}{\mathrm{supp}}
+\let\log\relax
+\DeclareMathOperator{\log}{\mathrm{log}}
+\DeclareMathOperator{\dif}{\mathrm{d}\!}
+\DeclareMathOperator{\Dif}{\mathrm{D}\!}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{remark}{Remark}
+
+
+
+\begin{document}
+
+\title{Almost sharp fronts for the surface geostrophic equation}
+
+\author{Roberta Graff\textsuperscript{a}, Javier de Ruiz Garcia\textsuperscript{b} \and Franklin Sonnery\textsuperscript{b,1}}
+\affiliation{\textsuperscript{a}University of Cambridge, Cambridge, United Kingdom and \textsuperscript{b}Universidad de Murcia, Bioquimica y Biologia Molecular, Murcia, Spain}
+
+\pubfoot{%
+Author contributions: JdRG and FS initiated the project.
+RG and JdRG derived the theory and performed experiments. FS prepared figures and wrote the manuscript, with contributions from all authors.\\
+\\
+The authors declare no conflict of interest.\\
+\\
+\textsuperscript{1}To whom correspondence should be addressed. E-mail:
+mail@dev/null\\
+\\
+This article contains supporting information online at XXXX.
+}
+
+\maketitle
+
+\significance{%
+The geostrophic equations are a simplified form of the Navier-Stokes equations and are highly important in the study of ocean currents. Here, we consider almost sharp fronts for the surface geostrophic equation and perform computational experiments to investigate their behaviour.
+}
+
+
+\begin{abstract}
+We use heat kernels or eigenfunctions of the Laplacian to construct local coordinates on large classes of Euclidean domains and Riemannian manifolds (not necessarily smooth, e.g. with \( \mathcal{C}^\alpha \) metric).
+These coordinates are bi-Lipschitz on large neighborhoods of the domain or manifold, with  constants controlling the distortion and the size of the neighborhoods that depend only on natural geometric properties of the domain or manifold.
+The proof of these results relies on novel estimates, from above and below, for the heat kernel and its gradient, as well as for the eigenfunctions of the Laplacian and their gradient, that hold in the non-smooth category, and are stable with respect to perturbations within this category.
+Finally, these coordinate systems are intrinsic and efficiently computable, and are of value in applications.
+\end{abstract}
+
+\keywords{monolayer,structure,x-ray reflectivity,molecular electronics}
+
+\dropcap{I}n this article we study the evolution of ``almost-sharp'' fronts for the surface quasi-geostrophic equation.
+This 2-D active scalar equation reads for the surface quasi-geostrophic equation:
+\begin{equation}
+\frac{\Dif{θ}}{\Dif{t}} = \frac{∂θ}{∂t} + u · ∇θ = 0, \label{qg1}
+\end{equation}
+where
+\begin{equation}
+u = (u_1, u_2) = \left( -\frac{∂ψ}{∂y}, \frac{∂ψ}{∂x} \right), \label{qg2}
+\end{equation}
+and
+\begin{equation}
+(-Δ)^{\frac{1}{2}} ψ = 0. \label{qg3}
+\end{equation}
+For simplicity we are considering fronts on the cylinder, i.e. we take \( (x, y) \) in \( \mathbb{R} / \mathbb{Z} × \mathbb{R} \).
+In this setting we define \( (-Δ)^{-\frac{1}{2}} \) that comes from inverting the third equation by convolution with the kernel.
+To avoid irrelevant considerations at \( ∞ \) we will take \( η \) to be compactly supported:
+\begin{equation*}
+\frac{χ(u, v)}{(u^2 + v^2)^{\frac{1}{2}}} + η(u, v),
+\end{equation*}
+where \( χ(x, y) ∈ C_0^∞ \), \( χ(x, y) = 1 \) in \( |x - y| ≤ r \) and \( \supp{χ} \) is contained in \( \{|x - y| ≤ R\} \) with \( 0 < r < R < \frac{1}{2} \).
+Also, \( η ∈ C_0^∞ \), \( η(0, 0) = 0 \).
+
+The main mathematical interest in the quasi-geostrophic equation lies in its strong similarities with the 3-Euler equations.
+These results were first proved by Constantin, Majda and Tabak, see \cite{kadison1959}, \cite{anderson1981} and \cite{anderson1979} for more details.
+There are several other research lines for this equation, both theoretical and numerical.
+See \cite{anderson1979b}, \cite{johnson1972} and \cite{akemann2004}.
+The question about the regularity of solutions for QG remains as an open problem.
+
+Recently, one of the authors has obtained the equation for the evolution of sharp fronts (in the periodic setting), proving its local well-posedness for that equation (see \cite{zhang2002} and \cite{tenenbaum2000} for more details).
+This is a problem in contour dynamics.
+Contour dynamics for other fluid equations have been studied extensively.
+
+
+\section{Analysis of almost sharp fronts}
+We begin our analysis on almost sharp fronts for the quasi-geostrophic equation, recalling the notion of weak solution.
+For these solutions we have the following:
+\begin{definition}
+A bounded function \( θ \) is a weak solution of QG if for any \( φ ∈ C_0^∞ (\mathbb{R} / \mathbb{Z} × \mathbb{R} × [0, ε]) \) we have
+\begin{align}
+& ∫_{\mathbb{R}^+ × \mathbb{R} / \mathbb{Z} × \mathbb{R}} θ(x, y, t) ∂_t ϕ(x, y, t) \dif{y}\dif{x}\dif{t} \nonumber \\
++ \hspace{2em} & ∫_{\mathbb{R}^+ × \mathbb{R} / \mathbb{Z} × \mathbb{R}} θ(x, y, t) u(x, y, t) · ∇ϕ(x, y, t) \dif{y}\dif{x}\dif{t} \label{qg4}
+\end{align}
+where $u$ is determined by equations \eqref{qg2} and \eqref{qg3}.
+\end{definition}
+
+\subsection{Data Sources}
+We are interested in studying the evolution of almost sharp fronts for the QG equation.
+These are weak solutions of the equation with large gradient (\( \sim\frac{1}{δ} \), where \( 2δ \) is the thickness of the transition layer for \( θ \)).
+
+
+\section{Discussion}
+\subsection{Cylindrical case}
+We are going to consider the cylindrical case here.
+We consider a transition layer of thickness smaller than \( 2δ \) in which \( θ \) changes from 0 to 1 (see Figure \ref{afoto}).
+That means we are considering \( θ \) of the form:
+\begin{equation}
+θ = \begin{cases}
+1 &\mathrm{if } y ≥ φ(x, t) + δ \\
+\mathrm{bounded} &\mathrm{if } |φ(x, t) − y| ≤ δ \\
+0 &\mathrm{if } y ≤ φ(x, t) − δ, \label{theta}
+\end{cases}
+\end{equation}
+where \( φ \) is a smooth, periodic function and \( 0 < δ < \frac{1}{2} \).
+
+\begin{theorem}
+If the active scale \( θ \) is as in \ref{theta} and satisfies the equation \ref{qg4}, then \( φ \) satisfies the equation
+\begin{align}
+\frac{∂φ}{∂t}(x, y) = &∫_{\mathbb{R} / \mathbb{Z}} \frac{\frac{∂φ}{∂x}(x, t) - \frac{∂φ}{∂u}(u, t)}{[(x - u)^2 + (φ(x, t) - φ(u, t))^2]^{\frac{1}{2}}} \nonumber \\
+& χ(x − u, φ(x, t) − φ(u, t))\dif{u} \nonumber \\
++ &∫_{\mathbb{R} / \mathbb{Z}} [ \frac{∂φ}{∂x}(x, t) - \frac{∂φ}{∂u}(u, t) ] \nonumber \\
+& η(x − u, φ(x, t) − φ(u, t))\dif{u} + \mathrm{Error}, \label{qg6}
+\end{align}
+with \( |\mathrm{Error}| ≤ C δ|\log δ| \), where \( C \) depends only on \( ||θ||_{L^∞} \) and \( ||∇φ||_{L^∞} \).
+\end{theorem}
+
+\begin{remark}
+Note that equation \ref{theta} specifies the function \( φ \) up to an error of order \( δ \).
+Theorem 1 provides an evolution equation for the function \( φ \) up to an error of order \( δ|\log δ| \).
+\end{remark}
+
+In order to analyze the evolution of the ``almost-sharp'' front, we substitute the above expression for \( θ \) in the definition of a weak solution (see \ref{qg4}).
+We use the notation \( X = O(Y) \) to indicate that \( |X| ≤ C|Y| \), where the constant \( C \) depends only on \( ||θ||_{L^∞} \), \( ||∇φ||_{L^∞} \) and \( ||ϕ||_{C^1} \), where \( ϕ \) is a test function appearing in Definition 1.
+
+We consider the 3 different regions defined by the form on \( θ \). Since \( θ = 0 \) in region I the contribution from that region is 0, i.e.
+\begin{align*}
+& ∫_{I × \mathbb{R}} θ(x, y, t) ∂_t ϕ(x, y, t)\dif{y}\dif{x}\dif{t} \\
++ & ∫_{I × \mathbb{R}} θ(x, y, t) u(x, y, t) · ∇ϕ(x, y, t) \dif{y}\dif{x}\dif{t}.
+\end{align*}
+
+As for region II,
+\begin{equation*}
+∫_{II × \mathbb{R}} θ(x, y, t) ∂_t ϕ(x, y, t)\dif{x}\dif{y}\dif{t} = O(δ),
+\end{equation*}
+since \( θ \) is bounded and hence \( O(1) \), and the area of region II is \( O(δ) \).
+As for the second term,
+\begin{equation*}
+∫_{II × \mathbb{R}} u θ ∇ ϕ \dif{x}\dif{y}\dif{t} = O(δ\log(δ)).
+\end{equation*}
+To see this, we fix \( t \).
+We must estimate
+\begin{equation*}
+∫_{\mathbb{R}^2} u · (⊭_{II} θ ∇ ϕ) \dif{x} \dif{y}.
+\end{equation*}
+We are left to estimate the terms
+\begin{equation*}
+∫_{III × \mathbb{R}} θ ∂_t ϕ(x, y, t)\dif{x}\dif{y}\dif{t} + ∫_{III × \mathbb{R}} θu_f · ∇ϕ\dif{x}\dif{y}\dif{t} =: A + B.
+\end{equation*}
+
+\subsection{Observations}
+The following observations can be made from the numerical experiments described in this section, and are consistent with the results of more extensive experimentation performed by the authors:
+\begin{itemize}
+\item The CPU times in Tables 1--3 are compatible with the estimates in formulae 14, 16 and 23.
+\item The precision produced by each of the Algorithms I and II is similar to that provided by formula 3, even when \( ω_{k+1} \) is close to the machine precision.
+\end{itemize}
+
+
+\materialsstart
+\subsection{Digital RNA SNP Analysis}
+A real-time PCR assay was designed to amplify \emph{PLAC4} mRNA, with the two SNP alleles being discriminated by TaqMan probes.
+\emph{PLAC4} mRNA concentrations were quantified in extracted RNA samples followed by dilutions to approximately one target template molecular of either type (i.e., either allele) per well. Details are given in the \emph{SI Materials and Methods}.
+
+\subsection{Digital RCD Analysis}
+Extracted DNA was quantified by spectrophotometry (NanoDrop Technologies, Wilmington, DE) and diluted to a concentration of approximately one target template from either chr23 or ch1 per well.
+
+\acknowledgments{%
+This work was partially supported by Spanish Ministry of Science and Technology Grant BFM2002-02042 and by National Science Foundation Grant DMS-0245242.
+}
+
+\materialsend
+
+
+\nocite{*}
+\printbibliography
+
+
+\begin{figure}
+\includegraphics[width=8.7cm]{figsamp.eps}
+\caption{LKB1 phosphorylates Thr-172 of AMPKα \textit{in vitro}
+and activates its kinase activity.}\label{afoto}
+\end{figure}
+
+\begin{SCfigure*}
+\includegraphics[width=11.4cm]{figsamp.eps}
+\caption{LKB1 phosphorylates Thr-172 of AMPKα \textit{in vitro}
+and activates its kinase activity.}\label{afoto2}
+\end{SCfigure*}
+
+\begin{table}[h]
+\centering
+\caption{Repeat length of longer allele by age of onset class.}
+\begin{tabular}{@{\vrule height 10.5pt depth4pt  width0pt}lccccc}
+& \multicolumn5c{Repeat length} \\
+\cline{2-6}
+Age of onset / years & \it n & Mean & SD & Range & Median \\
+\hline
+Juvenile, 2–20 & 40 & 60.15 & 9.32 & 43–86 & 60 \\
+Typical, 21–50 & 377 & 45.72 & 2.97 & 40–58 & 45 \\
+Late, > 50 & 26 & 41.85 & 1.56 & 40–45 & 42 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{document}
