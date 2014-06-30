@@ -11,6 +11,9 @@ After quite a bit of hacking, James Manton in the lab gave up on trying to use t
 It is important to remember that these files are unofficial and include a few hacks to produce output that is similar to, but not exactly identical, to that produced by the official files.
 In fact, these files produce output that is closer in appearance to that of a final, PNAS-published article than either of the PNAS-provided LaTeX files or the PNAS online manuscript length checking service.
 
+An [example document](https://github.com/jefferislab/pnaslatex/blob/master/examples/pnas_example.pdf?raw=true), based on the official PNAS LaTeX example, is included in the ``examples`` directory, along with full [LaTeX source](https://github.com/jefferislab/pnaslatex/blob/master/examples/pnas_example.tex).
+This has a number of advantages over the PNAS-provided example, such as Unicode suppport for both text and mathematics, the ability to use side captions for figures and tables, proper bibliography support (i.e. BibTeX, biblatex, etc. can be used instead of lists of ``\bibitem``s) and easier customisation. 
+
 
 ## LaTeX
 Advantages over the official PNAS files include:
