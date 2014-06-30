@@ -17,6 +17,7 @@
 \RequirePackage{fontspec}
 \setmainfont[Ligatures=TeX]{TeX Gyre Termes}
 \setsansfont[Ligatures=TeX]{Myriad Pro}
+\RequirePackage{unicode-math}
 
 
 % Figure captions
