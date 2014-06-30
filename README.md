@@ -12,7 +12,10 @@ It is important to remember that these files are unofficial and include a few ha
 In fact, these files produce output that is closer in appearance to that of a final, PNAS-published article than either of the PNAS-provided LaTeX files or the PNAS online manuscript length checking service.
 
 An [example document](https://github.com/jefferislab/pnaslatex/blob/master/examples/pnas_example.pdf?raw=true), based on the official PNAS LaTeX example, is included in the ``examples`` directory, along with full [LaTeX source](https://github.com/jefferislab/pnaslatex/blob/master/examples/pnas_example.tex).
-This has a number of advantages over the PNAS-provided example, such as Unicode suppport for both text and mathematics, the ability to use side captions for figures and tables, proper bibliography support (i.e. BibTeX, biblatex, etc. can be used instead of lists of ``\bibitem``s) and easier customisation. 
+This has a number of advantages over the PNAS-provided example, such as Unicode suppport for both text and mathematics, the ability to use side captions for figures and tables, proper bibliography support (i.e. BibTeX, biblatex, etc. can be used instead of lists of ``\bibitem``s) and easier customisation.
+
+If you use these files in a submission to PNAS I would appreciate an email to ``ajd.manton <at> googlemail <dot> com`` so I can maintain a rough idea of how useful these files are.
+If you try and use these files and instead resort to using the official PNAS files or submitting a Word document I would very much appreciate an email detailing why, so that I can try and improve the files/support.
 
 
 ## LaTeX
