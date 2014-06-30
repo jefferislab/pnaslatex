@@ -1,0 +1,101 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[pnas]{Article (Proceedings of the National Academy of Science, PNAS) (unofficial)}
+#  \DeclareCategory{Articles}
+# Input general definitions
+Input stdclass.inc
+
+Style Affiliation
+	LatexType Command
+	LatexName affiliation
+	Category FrontMatter
+	InTitle 1
+End
+
+Style PublicationFootnotes
+	LatexType Command
+	LatexName pubfoot
+	Category FrontMatter
+	InTitle 1
+	Font
+		Color Red
+	EndFont
+	TopSep 1
+	BottomSep 1
+End
+
+Style Significance
+	LatexType Command
+	LatexName significance
+	Font
+		Series Bold
+		Color Blue
+	EndFont
+End
+
+Style Keywords
+	LatexType Command
+	LatexName keywords
+End
+
+Style StartMaterials
+	Margin Dynamic
+	ParSkip               0.4
+	TopSep                1.3
+	BottomSep             0.7
+	ParSep                0.7
+	Align                 Block
+	LatexType Command
+	LatexName materialsstart
+	Font
+	  Size Larger
+	  Series Bold
+	  Color Green
+	EndFont
+	LabelType Static
+	LabelString "Materials"
+	KeepEmpty 1
+End
+
+Style EndMaterials
+	Margin Dynamic
+	LatexType Command
+	LatexName materialsend
+	Category BackMatter
+	TopSep 1.2
+	ParSkip 0.4
+	BottomSep 0.8
+	Align Left
+	LabelType Static
+	LabelString "[End Materials and Acknowledgements]"
+	KeepEmpty 1
+	Font
+	  Series Bold
+	  Size large
+	  Color Green
+	 EndFont
+End
+
+Style Acknowledgments
+	Margin Dynamic
+	LatexType Command
+	LatexName acknowledgments
+	Category BackMatter
+	TopSep 1.2
+	ParSkip 0.4
+	BottomSep 0.8
+	Align Left
+	LabelType Static
+	LabelString "[Acknowledgments]"
+	KeepEmpty 0
+End
+
+InsetLayout Dropcap
+  LyxType charstyle
+  LabelString ""
+  LatexType Command
+  LatexName dropcap
+  Font
+		Series Bold
+		Size Huge
+	EndFont
+End
