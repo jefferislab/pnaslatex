@@ -20,7 +20,7 @@ If you try and use these files and instead resort to using the official PNAS fil
 
 ## LaTeX
 Advantages over the official PNAS files include:
- * Side captions font figures and tables
+ * Side captions for figures and tables
  * Bibliographies generated via BibTeX, BibLaTeX, etc., rather than lists of ``\bibitem`` in the LaTeX source
  * Support for native Unicode via compilation with XeLaTeX or LuaLaTeX
  * Easy font configuration
