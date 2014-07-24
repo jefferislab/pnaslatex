@@ -18,16 +18,53 @@ If you use these files in a submission to PNAS I would appreciate an email to ``
 If you try and use these files and instead resort to using the official PNAS files or submitting a Word document I would very much appreciate an email detailing why, so that I can try and improve the files/support.
 
 
-## LaTeX
-Advantages over the official PNAS files include:
- * Side captions for figures and tables
- * Bibliographies generated via BibTeX, BibLaTeX, etc., rather than lists of ``\bibitem`` in the LaTeX source
- * Support for native Unicode via compilation with XeLaTeX or LuaLaTeX
- * Easy font configuration
- * Well-documented, simple code, in fewer than 200 lines (cf. > 3300 lines in the official class file)
+## Advantages over the official PNAS files
+These include:
 
-Required packages: ``geometry``, ``fontspec``, ``caption``, ``sidecap``, ``titling``, ``ftnright``, ``calc``, ``lettrine``, ``fancyhdr``, ``ifthen``, ``lastpage``, and ``titlesec``.
-By default, the Myriad Pro and TeX Gyre Termes font families are used for sans-serif and serif text, respectively.
+  * **Side captions for figures and tables**, just like in actual PNAS articles
+  * **Full support for Unicode**, so you can write:
+
+        \frac{\Dif{θ}}{\Dif{t}} = \frac{∂θ}{∂t} + u · ∇θ = 0
+
+    rather than:
+
+        \frac{\Dif{\theta}}{\Dif{t}} = \frac{\partial \theta}{\partial t} + u \cdot \nabla \theta = 0
+
+  * **Sensible bibliography handling**, via BibTeX, BibLaTeX, etc., such that instead of:
+  
+        \bibitem{BN}
+            M.~Belkin and P.~Niyogi, {\em Using manifold structure for partially labelled classification}, Advances in NIPS, 15 (2003).
+        \bibitem{BBG:EmbeddingRiemannianManifoldHeatKernel}
+            P.~B\'erard, G.~Besson, and S.~Gallot, {\em Embedding {R}iemannian manifolds by their heat kernel}, Geom. and Fun. Anal., 4 (1994), pp.~374--398.
+
+    you can just write:
+    
+        \bibliography{mybibfile}
+
+    and use your favourite reference manager to organise the references, with BibLaTeX/BibTeX handling the formatting for you.
+
+  * **Easy font configuration**, with PNAS-like fonts used by default out-of-the-box without any need to specify Karl Berry names, etc. as with the official files
+  
+  * **Well-documented, simple code**, in fewer than 200 lines (cf. > 3300 lines in the official class file)
+
+
+## LaTeX
+A small number of common packages are required for full functionality:
+
+  * ``geometry`` – specifies paper size
+  * ``fontspec`` — specifies fonts
+  * ``titlesec`` – formats section headers
+  * ``lettrine`` — used for initial dropcap at start of article
+  * ``fancyhdr`` — specifies the headers and footers
+  * ``ifthen`` — ensures the right footer appears on the right pages
+  * ``lastpage`` — allows the footer to contain the total number of pages
+  * ``caption`` — handles table and figure captions
+  * ``sidecap`` — provides the ability to use side captions
+  * ``titling`` – used for article title
+  * ``ftnright`` — necessary for the Significance Statement and Publication Footnotes
+  * ``calc`` — ensures Significance Statement and Publication Footnotes use the right amount of space
+  
+By default, the [Myriad Pro](https://typekit.com/fonts/myriad-pro) and [TeX Gyre Termes](http://www.gust.org.pl/projects/e-foundry/tex-gyre/termes) font families are used for sans-serif and serif text, respectively.
 
 ## LyX
 
