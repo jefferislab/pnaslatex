@@ -33,6 +33,7 @@ By default, the Myriad Pro and TeX Gyre Termes font families are used for sans-s
 
 
 ## Installation
+To install the LyX file, ``pnas.layout``, copy it to the ``layouts`` folder of your [user directory](http://wiki.lyx.org/LyX/UserDir) and then reconfigure LyX using Tools > Reconfigure. After restarting LyX, a new PNAS document class should be selectable.
 
 
 ## Usage
