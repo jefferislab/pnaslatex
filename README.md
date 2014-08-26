@@ -14,6 +14,10 @@ In fact, these files produce output that is closer in appearance to that of a fi
 An [example document](https://github.com/jefferislab/pnaslatex/blob/master/examples/pnas_example.pdf?raw=true), based on the official PNAS LaTeX example, is included in the ``examples`` directory, along with full [LaTeX source](https://github.com/jefferislab/pnaslatex/blob/master/examples/pnas_example.tex).
 This has a number of advantages over the PNAS-provided example, such as Unicode suppport for both text and mathematics, the ability to use side captions for figures and tables, proper bibliography support (i.e. BibTeX, biblatex, etc. can be used instead of lists of ``\bibitem``s) and easier customisation.
 
+These files were original designed for, and successfully used in, the submission of the manuscript for:
+
+[Kohl J, et al. (2014) Ultrafast tissue staining with chemical tags. _Proc Natl Acad Sci USA_. doi: 10.1073/pnas.1411087111](http://dx.doi.org/10.1073/pnas.1411087111)
+
 If you use these files in a submission to PNAS I would appreciate an email to ``ajd.manton <at> googlemail <dot> com`` so I can maintain a rough idea of how useful these files are.
 If you try and use these files and instead resort to using the official PNAS files or submitting a Word document I would very much appreciate an email detailing why, so that I can try and improve the files/support.
 
