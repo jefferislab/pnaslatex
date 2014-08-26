@@ -11,6 +11,13 @@
 \ProcessOptions
 \LoadClass[twoside]{article}
 
+% Font settings
+\newcommand{\sansnormal}{\fontspec{Myriad Pro}}
+\newcommand{\sanssemibold}{\fontspec{Myriad Pro Semibold}}
+\newcommand{\sanssemibolditalic}{\fontspec{Myriad Pro Semibold Italic}}
+\newcommand{\sansbold}{\fontspec{Myriad Pro Bold}}
+
+\newcommand{\serifnormal}{\fontspec{TeX Gyre Termes}}
 
 % Page dimensions
 \RequirePackage[paperwidth=210mm, paperheight=297mm, left=19mm, right=12mm, top=27.5mm, bottom=32mm, foot=8mm, asymmetric]{geometry}
@@ -39,7 +46,7 @@
 \captionsetup[table]{format=capfont}
 \renewenvironment{table}{%
 	\renewcommand* {\@floatboxreset}{%
-		\fontspec{Myriad Pro}\fontsize{7.9pt}{8.5pt}\selectfont\@setminipage}%
+		\sansnormal\fontsize{7.9pt}{8.5pt}\selectfont\@setminipage}%
 	\@float{table}%
 }{%
 	\end@float
@@ -57,15 +64,15 @@
 	\twocolumn[
 		\begin{@twocolumnfalse}
 			% Title
-			{\fontspec{Myriad Pro Semibold}\fontsize{22pt}{24pt}\selectfont \thetitle}
+			{\sanssemibold\fontsize{22pt}{24pt}\selectfont \thetitle}
 
 			\vspace*{10pt}
 			% Author
-			{\fontspec{Myriad Pro Semibold}\fontsize{9.7pt}{12pt}\selectfont \theauthor}
+			{\sanssemibold\fontsize{9.7pt}{12pt}\selectfont \theauthor}
 
 			\vspace*{8pt}
 
-			{\fontspec{Myriad Pro}\fontsize{7.9pt}{8.5pt}\selectfont
+			{\sansnormal\fontsize{7.9pt}{8.5pt}\selectfont
 			\printaffiliation
 
 			\vspace*{1em}
@@ -81,14 +88,14 @@
 
 % Abstract
 \renewenvironment{abstract}{%
-\fontspec{Myriad Pro Semibold}\fontsize{8.5pt}{10.5pt}\selectfont\setlength{\parindent}{0pt}%
+\sanssemibold\fontsize{8.5pt}{10.5pt}\selectfont\setlength{\parindent}{0pt}%
 }{\par\vspace*{1em}}
 
 
 % Keywords
 \RequirePackage{color}
 \newcommand{\keywords}[1]{%
-	{\fontspec{Myriad Pro}\fontsize{7.9pt}{10pt}\selectfont\noindent\@for\kw:=#1\do{\kw\hspace{0.5em}|\hspace{0.5em}}\hspace{-0.875em}\fcolorbox{white}{white}{\phantom{i}}\vspace*{1em}}%
+	{\sansnormal\fontsize{7.9pt}{10pt}\selectfont\noindent\@for\kw:=#1\do{\kw\hspace{0.5em}|\hspace{0.5em}}\hspace{-0.875em}\fcolorbox{white}{white}{\phantom{i}}\vspace*{1em}}%
 }
 
 % Significance text
@@ -106,13 +113,13 @@
 	\blfootnote{\newline
 		\noindent\fbox{%
 			\parbox{\linewidth-2\fboxsep-1.6pt}{%
-				{\fontspec{Myriad Pro Semibold}\fontsize{10pt}{12pt}\selectfont Significance} \newline%
-				\fontspec{Myriad Pro Semibold}\fontsize{8.5pt}{9.5pt}\selectfont\newline%
+				{\sanssemibold\fontsize{10pt}{12pt}\selectfont Significance} \newline%
+				\sanssemibold\fontsize{8.5pt}{9.5pt}\selectfont\newline%
 				\addfontfeature{LetterSpace=0.92,WordSpace=0.92}{#1}%
 			}%
 		} \\
 		\vspace*{1em} \\
-		\fontspec{Myriad Pro}\fontsize{7.9pt}{8.5pt}\selectfont \printpubfoot
+		\sansnormal\fontsize{7.9pt}{8.5pt}\selectfont \printpubfoot
 	}%
 }
 
@@ -120,7 +127,7 @@
 % Drop cap
 \RequirePackage{lettrine}
 \renewcommand{\LettrineTextFont}{\rmfamily}
-\newcommand{\dropcap}[1]{\lettrine[loversize=0.15,nindent=0pt]{{\fontspec{Myriad Pro}\selectfont #1}}{}}
+\newcommand{\dropcap}[1]{\lettrine[loversize=0.15,nindent=0pt]{{\sansnormal\selectfont #1}}{}}
 
 
 % Footer
@@ -129,31 +136,31 @@
 \RequirePackage{lastpage}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[OC]{\fontspec{Myriad Pro}\fontsize{7.9pt}{8.5pt}\selectfont \ifthenelse{\value{page}=1}{www.pnas.org --- ---}{Footline Author} \hfill PNAS \hspace{2pt} | \hspace{2pt} \textbf{Issue Date} \hspace{2pt} | \hspace{2pt} Volume \hspace{2pt} | \hspace{2pt} Issue Number \hspace{2pt} | \hspace{2pt} \ifthenelse{\value{page}=1}{\thepage\ -- \pageref{LastPage}}{\textbf{\thepage}}}
-\fancyfoot[EC]{\fontspec{Myriad Pro}\fontsize{7.9pt}{8.5pt}\selectfont \thepage \hspace{2pt} | \hspace{2pt} www.pnas.org --- --- \hfill Footline Author}
+\fancyfoot[OC]{\sansnormal\fontsize{7.9pt}{8.5pt}\selectfont \ifthenelse{\value{page}=1}{www.pnas.org --- ---}{Footline Author} \hfill PNAS \hspace{2pt} | \hspace{2pt} \textbf{Issue Date} \hspace{2pt} | \hspace{2pt} Volume \hspace{2pt} | \hspace{2pt} Issue Number \hspace{2pt} | \hspace{2pt} \ifthenelse{\value{page}=1}{\thepage\ -- \pageref{LastPage}}{\textbf{\thepage}}}
+\fancyfoot[EC]{\sansnormal\fontsize{7.9pt}{8.5pt}\selectfont \thepage \hspace{2pt} | \hspace{2pt} www.pnas.org --- --- \hfill Footline Author}
 \pagestyle{fancy}
 
 
 % Section headers
 \setcounter{secnumdepth}{-1}
 \RequirePackage{titlesec}
-\titleformat{\section}{\fontspec{Myriad Pro Bold}\fontsize{7.9pt}{8.5pt}}{\arabic{section}}{0.5em}{}{}
+\titleformat{\section}{\sansbold\fontsize{7.9pt}{8.5pt}}{\arabic{section}}{0.5em}{}{}
 \titlespacing*{\section}{0pt}{1em}{0pt}
-\titleformat{\subsection}[runin]{\fontspec{Myriad Pro Semibold}}{\arabic{subsection}}{0em}{}[.]
+\titleformat{\subsection}[runin]{\sanssemibold}{\arabic{subsection}}{0em}{}[.]
 \titlespacing*{\subsection}{0pt}{1em}{1em}
-\titleformat{\subsubsection}[runin]{\fontspec{Myriad Pro Semibold Italic}}{\arabic{subsubsection}}{0em}{}[.]
+\titleformat{\subsubsection}[runin]{\sanssemibolditalic}{\arabic{subsubsection}}{0em}{}[.]
 \titlespacing*{\subsubsection}{0pt}{0pt}{1em}
 
 
 % Materials
 \newcommand{\materialsstart}{\section{Materials and Methods}%
-\fontspec{Myriad Pro}\fontsize{7.9pt}{8.5pt}\selectfont}
-\newcommand{\materialsend}{\fontspec{TeX Gyre Termes}\fontsize{9.5pt}{10.5pt}\selectfont}
+\sansnormal\fontsize{7.9pt}{8.5pt}\selectfont}
+\newcommand{\materialsend}{\serifnormal\fontsize{9.5pt}{10.5pt}\selectfont}
 
 
 % Acknowledgments
 \newcommand{\acknowledgments}[1]{\section{Acknowledgments}%
-\fontspec{Myriad Pro}\fontsize{7.9pt}{8.5pt}\selectfont #1}
+\sansnormal\fontsize{7.9pt}{8.5pt}\selectfont #1}
 
 
 % Alter some LaTeX defaults for better treatment of figures:
