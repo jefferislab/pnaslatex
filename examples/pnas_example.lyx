@@ -1,0 +1,1375 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass pnas
+\begin_preamble
+% Other packages
+\usepackage{pdflscape}
+\usepackage{graphicx}
+%\usepackage[comma,super,sort&compress]{natbib}
+
+% Counters and references
+\setcounter{secnumdepth}{-1}
+\usepackage{pdfsync}
+
+% Helper commands
+\newref{fig}{refcmd = {Fig.~\ref{#1}}}
+\newref{table}{refcmd = {Table~\ref{#1}}}
+\renewcommand{\tabref}{\Tabref}
+
+% Bibliography
+\setlength{\bibsep}{0.0pt}
+\def\bibfont{\fontspec{Myriad Pro}\fontsize{7.9pt}{8.5pt}\selectfont}
+
+% No text outside columns
+\sloppy
+\end_preamble
+\options sort&compress
+\use_default_options true
+\begin_modules
+sidecap
+\end_modules
+\maintain_unincluded_children false
+\language american
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue, urlcolor=red, citecolor=blue"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style pnas
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+My Title
+\end_layout
+
+\begin_layout Author
+An Author
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+a, b
+\end_layout
+
+\end_inset
+
+, Bee Author
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+a, 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+Some place 
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+
+current address: somewhere or other
+\end_layout
+
+\begin_layout PublicationFootnotes
+Author contributions: AA and BA.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The authors declare no conflict of interest.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+To whom correspondence should be addressed.
+ E-mail: bee@ant.edu
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+This article contains supporting information online at XXXX.
+\end_layout
+
+\begin_layout Significance
+Significance Statement.
+ Authors must submit a 120-word-maximum statement about the significance
+ of their research paper written at a level understandable to an undergraduate-e
+ducated scientist outside their field of specialty.
+ The primary goal of the Significance Statement is to explain the relevance
+ of the work in broad context to a broad readership.
+ The Significance Statement appears in the paper itself and is required
+ for all research papers.
+ For PNAS Plus papers only, a collection of such statements will appear
+ in an issue of the journal, see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+www.pnas.org/site/authors/pnasplus_faq.xhtml
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+PNAS guidelines
+\end_layout
+
+\begin_layout Itemize
+Corresponding author: The name, complete address, telephone number, and
+ e-mail address of the author to whom correspondence and proofs should be
+ sent.
+ Mailing and e-mail addresses will appear in print and online.
+ 
+\end_layout
+
+\begin_layout Itemize
+At least three keywords are required at submission.
+ 
+\end_layout
+
+\begin_layout Itemize
+Provide an abstract of no more than 250 words on page 2 of the manuscript.
+ 
+\end_layout
+
+\begin_layout Itemize
+Authors must submit a 120-word-maximum statement about the significance
+ of their research paper written at a level understandable to an undergraduate-e
+ducated scientist outside their field of specialty.
+ The primary goal of the Significance Statement is to explain the relevance
+ of the work in broad context to a broad readership.
+ 
+\end_layout
+
+\begin_layout Itemize
+References must be in PNAS style.
+\end_layout
+
+\begin_layout Itemize
+Unpublished abstracts of papers presented at meetings or references to "data
+ not shown" are not permitted.
+ Include the full title for each cited article.
+ All authors (unless there are more than five) should be named in the citation.
+ If there are more than five, list the first author's name followed by et
+ al.
+\end_layout
+
+\begin_layout Itemize
+Figure Legends.
+ Provide these separately from figures, after the references in the manuscript.
+ For figures with multiple panels, the first sentence of the legend should
+ be a brief overview of the entire figure.
+ 
+\end_layout
+
+\begin_layout Itemize
+Authors must submit their articles at www.PNAScentral.org.
+ A single PDF file is permitted for initial Direct Submissions, but source
+ files are required for all resubmissions, including revisions.
+ 
+\end_layout
+
+\begin_layout Itemize
+The submission system requires that the corresponding author include the
+ following information for each coauthor: Author Order, First Name, Last
+ Name, E-mail Address, and Institution.
+ 
+\end_layout
+
+\begin_layout Itemize
+Images must be final size, preferably one column width (8.7 cm).
+ Figures wider than one column should be sized to 11.4 cm or 17.8 cm wide.
+ Numbers, letters, and symbols should be no smaller than 6 points (2 mm)
+ and no larger than 12 points (6 mm) after reduction and must be consistent.
+ 
+\end_layout
+
+\begin_layout Itemize
+Each table should have a brief title above the table.
+ Table footnotes should be below the table.
+ Tables must be submitted as separate files, not embedded in the manuscript
+ text.
+ 
+\end_layout
+
+\begin_layout Itemize
+The main text of the paper must stand on its own without the SI.
+ Refer to SI in the manuscript at an appropriate point in the text.
+ Number supporting figures and tables starting with S1, S2, etc.
+ Authors are limited to no more than 10 SI files, not including movie files.
+ 
+\end_layout
+
+\begin_layout Itemize
+PNAS generally uses a two-column format averaging 67 characters, including
+ spaces, per line.
+ The maximum length of a printed research article is six pages, including
+ all text, spaces, and the number of characters displaced by figures, tables,
+ and equations.
+ An online submission tool provides authors with an estimation of whether
+ their manuscript fits within the PNAS length requirements.
+ 
+\end_layout
+
+\begin_layout Itemize
+When submitting tables, figures, and/or equations in addition to text, keep
+ the text for your manuscript under 39,000 characters (including spaces).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Provide an abstract of no more than 250 words ...
+\end_layout
+
+\begin_layout Keywords
+keywords1, keywords2
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sloppy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Dropcap
+status open
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+
+n this article we ...
+\end_layout
+
+\begin_layout Standard
+These results were first proved by Constantin, Majda and Tabak, see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kadison1959,anderson1981,anderson1979"
+
+\end_inset
+
+ for more details.
+ There are several other research lines for this equation, both theoretical
+ and numerical.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
+Expression of chemical tags in the 
+\emph on
+Drosophila
+\emph default
+ brain
+\end_layout
+
+\begin_layout Standard
+We sought to develop a labeling system that overcomes the limitations of
+ antibody-based immunostainings, i.e.
+ speed (poor penetration of thick tissue samples), specificity (background
+ staining due to off-target binding) and complexity (number of user interactions
+, i.e.
+ manual steps, in staining protocols).
+\end_layout
+
+\begin_layout Subsection
+Ultra-fast labeling of thick tissue samples
+\end_layout
+
+\begin_layout Standard
+Some results
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float SCfigure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Set width of Insert ...
+ Graphics to 11.4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:parameters"
+
+\end_inset
+
+Ultra-fast and homogeneous tag-based tissue staining.
+ (
+\emph on
+A
+\emph default
+) ...
+
+\series bold
+ 
+\series default
+(
+\emph on
+B
+\emph default
+) ...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="100line%">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Characteristic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Immunostaining
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chemical labeling
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Duration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hours-days
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Minutes-hours
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+User interactions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> 15
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Substrate size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150 kDa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 kDa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Staining steps
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Blocking
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Background
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Often high
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Low
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Epitope stability
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+High
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cell permeable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes/No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No.
+ of channels
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Many
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4 (currently)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transgenics 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Stoichiometry
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\series bold
+(
+\series default
+c
+\series bold
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable (> 1:1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1:1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Comparison-of-immunostainings"
+
+\end_inset
+
+A table.
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Comparing antibody and chemical tag based staining approaches.
+ Staining durations indicated are typical for thick tissue samples (hundreds
+ of µm to several mm).
+ Notes: (a) Using standard immunostaining protocol for 
+\emph on
+Drosophila
+\emph default
+ brains (see text for references).
+ (b) Fluorophore-coupled primary antibodies are sometimes used, reducing
+ the number of staining steps to 1.
+ (c) i.e.
+ fluorescent label-to- protein tag ratio.
+ For immunohistochemistry, this cannot be easily quantified.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Applications in 
+\series default
+\emph on
+Drosophila
+\series bold
+\emph default
+ Neurobiology
+\end_layout
+
+\begin_layout Subsection
+Chemical labeling of mouse brain tissue
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Full width = 17.8cm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:slice"
+
+\end_inset
+
+Chemical labeling of the mouse brain.
+
+\series bold
+ 
+\series default
+(
+\emph on
+A
+\emph default
+) ...
+ (
+\emph on
+B
+\emph default
+)
+\series bold
+ 
+\series default
+...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement t
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+set width to e.g.
+ 8.7 cm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:slice-ext"
+
+\end_inset
+
+A figure
+\series bold
+ 
+\series default
+(
+\emph on
+A
+\emph default
+) ...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+Some discussion ...
+\end_layout
+
+\begin_layout StartMaterials
+
+\end_layout
+
+\begin_layout Subsection
+Methods subsection
+\end_layout
+
+\begin_layout Subsection
+Methods subsection
+\end_layout
+
+\begin_layout Section
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+We thank ...
+\end_layout
+
+\begin_layout EndMaterials
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+At the time of writing, https://github.com/jburon/pnas2011.bst is the best
+ style we could find.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+See also https://github.com/jefferislab/pnaslatex/issues/10.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "pnas_example"
+options "pnas2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+restart counters for SI
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\backslash
+renewcommand{
+\backslash
+thefigure}{S
+\backslash
+arabic{figure}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{table}{0}
+\backslash
+renewcommand{
+\backslash
+thetable}{S
+\backslash
+arabic{table}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+onecolumn
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Supporting Information
+\end_layout
+
+\begin_layout Subsection
+SI Methods
+\end_layout
+
+\begin_layout Subsubsection
+Protocol for chemical labeling of Drosophila brains
+\end_layout
+
+\begin_layout Subsection
+Supplemental Movie 1 (MOV format)
+\end_layout
+
+\begin_layout Standard
+Details of the movie ...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide true
+sideways true
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+heading 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+heading 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+row 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+row 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:substrates"
+
+\end_inset
+
+
+\series bold
+Sample SI table
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+\size footnotesize
+Caption details
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float SCfigure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SI Figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cross"
+
+\end_inset
+
+
+\series default
+ SI figure 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
