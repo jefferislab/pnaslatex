@@ -71,10 +71,15 @@ A small number of common packages are required for full functionality:
 By default, the [Myriad Pro](https://typekit.com/fonts/myriad-pro) and [TeX Gyre Termes](http://www.gust.org.pl/projects/e-foundry/tex-gyre/termes) font families are used for sans-serif and serif text, respectively.
 
 ## LyX
+The simplest approach is to put
 
+* pnas.cls
+* pnas.layout
+* pnas2011.bst (optional, but recommended)
 
-## Installation
-To install the LyX file, ``pnas.layout``, copy it to the ``layouts`` folder of your [user directory](http://wiki.lyx.org/LyX/UserDir) and then reconfigure LyX using Tools > Reconfigure. After restarting LyX, a new PNAS document class should be selectable.
+next to your LyX file. You can try this out with the `example2.lyx` LyX file kindly provided by @tommy-engels.
 
+### Installation
+For regular use, it is recommended to install the LyX file, ``pnas.layout``, copy it to the ``layouts`` folder of your [user directory](http://wiki.lyx.org/LyX/UserDir) and then reconfigure LyX using Tools > Reconfigure. After restarting LyX, a new PNAS document class should be selectable.
 
 ## Usage
